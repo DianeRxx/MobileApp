@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+        <link rel="stylesheet" type="text/css" href="handheld.css" />
+        <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+        <title>JPMorganRecruitment</title>
+    </head>
+    <body>
+        <form id=studentinfo class="app" METHOD="LINK" ACTION="page1.htm">
+            <h1> JP Morgan Student Recuitment Application </h1>
+            <p> Welcome to our student details application where you can enter your details and we will keep you informed
+                of our recruitment process and job positions available. </p>
+            <button type="reset" value="Reset"></button>
+            <fieldset>
+                <legend>Contact Details</legend>
+                <ol>
+                    <li>
+                        <label for=name>Name</label>
+                        <input id="name" name="name" type=text placeholder="First and Last Name" required autofocus>
+                            </li>
+                    <li>
+                        <label for=email>Email</label>
+                        <input id="email" name="email" type=email placeholder="example@domain.com" required>
+                            </li>
+                    <li>
+                        <label for=phone>Phone</label>
+                        <input id="phone" name="phone" type=tel placeholder="Eg. +447500000000" required>
+                            </li>
+                </ol>
+            </fieldset>
+            <fieldset>
+                <legend>University Information</legend>
+                <ol>
+                    <li>
+                        <label for=universityname>Name of University</label>
+                        <input id="university" name="university" type=text placeholder="University" required>
+                    </li>
+                    <li>
+                        <label for=classification>Degree Classification</label>
+                        <input id="degree" name="degree" type=text placeholder="BSc, MEng" required>
+                    </li>
+                    <li>
+                        <label for=course>Title of Course</label>
+                        <input id="course" name="course" type=text placeholder="Computer Science"  required>
+                            </li>
+                    <li>
+                        <label for=year>Year of Study</label>
+                        <select id = "year" name = "year">
+                            <option value = "1">1st Year</option>
+                            <option value = "2">2nd Year</option>
+                            <option value = "3">3rd Year</option>
+                            <option value = "4">4th Year</option>
+                            <option value = "5"> 5th Year</option>
+                        </select>
+                            </li>
+                </ol>
+            </fieldset>
+            <fieldset>
+                <label>Schemes Available</label>
+                <select id = "scheme" name= "scheme" required>
+                    <option value = "1">Technology Graduate Scheme</option>
+                    <option value = "2">Spring Technology Week</option>
+                    <option value = "3">Technology Internship</option>
+                    <option value = "4">Open Technology Position</option>
+                </select>
+                </fieldset>
+            <fieldset>
+                <button type="submit">Submit your details</button>
+            </fieldset>
+        </form>
+    </body>
+</html>

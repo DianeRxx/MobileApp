@@ -1,0 +1,216 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+
+/* Portrait layout (default) */
+.app {
+    *background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
+    *position:absolute;             /* position in the center of the screen */
+    left:50%;
+    top:50%;
+    *height:200px;                   /* text area height */
+    *width:225px;                   /* text area width */
+    text-align:center;
+    *padding:180px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
+    *margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
+                                   /* offset horizontal: half of text area width */
+}
+
+/* Landscape layout (with min-width) */
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+    .app {
+        background-position:left center;
+        padding:75px 0px 75px 150px;  /* padding-top + padding-bottom + text area = image height */
+        margin:-70px 0px 0px -190px;  /* offset vertical: half of image height */
+                                      /* offset horizontal: half of image width and text area width */
+    }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+	.app {
+		text-align: left;
+	}
+}
+
+
+html, body, form, fieldset, ol, li {
+	margin: 5px;
+	padding: 0;
+    margin-left: auto;
+    margin-right: auto
+}
+
+
+
+h1, p {
+    color: #FFFF33;
+    text-align: center;
+    }
+
+body {
+	background: #FFFFFF;
+	color: #111111;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	padding: 20px;
+}
+
+form#studentinfo {
+	background: RGB(225,39,39);
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	padding: 20px;
+}
+
+form#studentinfo fieldset {
+    background: RGB(225,39,39);
+	border: none;
+	margin-bottom: 10px;
+}
+
+form#studentinfo fieldset:last-of-type {
+	*margin-bottom: 10;
+}
+
+form#studentinfo legend {
+    background: RGB(225,39,39);
+	color: #FFFFFF;
+	font-size: 20px;
+	font-weight: normal;
+	padding-bottom: 5px;
+}
+
+form#studentinfo ol li {
+	*background: #FF8A6C;
+	background: rgb(241, 162, 56);
+	border-color: #e3ebc3;
+	border-color: rgba(255,255,255,.6);
+	border-style: solid;
+	border-width: 2px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	line-height: 30px;
+	list-style: none;
+	padding: 5px 10px;
+	*margin-bottom: 10px;
+}
+
+form#studentinfo ol ol li {
+	background: rgb(231,98,42);
+	border: none;
+	float: left;
+}
+
+form#studentinfo label {
+    color: RGB(255,255,255);
+	float: left;
+	font-size: 16px;
+    font-weight: normal;
+	*width: 200px;
+}
+
+
+
+form#payment input:not([type=radio]),
+form#payment textarea {
+	background: #ffffff;
+	border: none;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	border-radius: 3px;
+	font: italic 13px Georgia, "Times New Roman", Times, serif;
+	outline: none;
+	padding: 5px;
+	*width: 200px;
+}
+
+form#payment input:not([type=submit]):focus,
+form#payment textarea:focus {
+	background: #eaeaea;
+}
+
+form#studentinfo button {
+	background: RGB(235,138,39);
+	border: none;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;
+	border-radius: 20px;
+	color: RGB(255,255,255);
+	display: block;
+	font: 18px Georgia, "Times New Roman", Times, serif;
+	letter-spacing: 1px;
+	margin: auto;
+    *margin-bottom: 10px;
+	*padding: 7px 25px;
+	*text-shadow: 0 1px 1px #000000;
+	text-transform: uppercase;
+
+}
+
+form#studentinfo button:hover {
+	background: #A62100;
+	cursor: pointer;
+}
+
+
+.event {
+    border-radius:4px;
+    -webkit-border-radius:4px;
+    color:#FFFFFF;
+    font-size:12px;
+    margin:0px 30px;
+    padding:2px 0px;
+}
+
+
+
+.event.listening {
+    background-color:#333333;
+    display:block;
+}
+
+.event.received {
+    background-color:#4B946A;
+    display:none;
+}
+
+@keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+@-webkit-keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+.blink {
+    animation:fade 3000ms infinite;
+    -webkit-animation:fade 3000ms infinite;
+}
