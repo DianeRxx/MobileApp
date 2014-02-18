@@ -24,6 +24,8 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
+		
+		
         <link rel="stylesheet" type="text/css" href="handheld.css" />
         <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
@@ -31,55 +33,33 @@
         <title>JPMorganRecruitment</title>
     </head>
     <body>
-        <form id=studentinfo class="app" METHOD="LINK" ACTION="page1.htm">
+        <form id=studentinfo class="app" >
             <h1> JP Morgan Student Recuitment Application </h1>
             <p> Welcome to our student details application where you can enter your details and we will keep you informed
                 of our recruitment process and job positions available. </p>
-            <button type="reset" value="Reset"></button>
+            <button type="reset" value="Reset">Reset</button>
             <fieldset>
                 <legend>Contact Details</legend>
-                <ol>
-                    <li>
-                        <label for=name>Name</label>
-                        <input id="name" name="name" type=text placeholder="First and Last Name" required autofocus>
-                            </li>
-                    <li>
-                        <label for=email>Email</label>
-                        <input id="email" name="email" type=email placeholder="example@domain.com" required>
-                            </li>
-                    <li>
-                        <label for=phone>Phone</label>
-                        <input id="phone" name="phone" type=tel placeholder="Eg. +447500000000" required>
-                            </li>
-                </ol>
+					Name: <input type="text" placeholder="James Morgan" required><br>
+    				Email: <input type="email" name="user_email" placeholder="james@uni.com"><br>
+    				Phone Number: <input type="text" placeholder="07749751234" required>
             </fieldset>
+            
             <fieldset>
                 <legend>University Information</legend>
-                <ol>
-                    <li>
-                        <label for=universityname>Name of University</label>
-                        <input id="university" name="university" type=text placeholder="University" required>
-                    </li>
-                    <li>
-                        <label for=classification>Degree Classification</label>
-                        <input id="degree" name="degree" type=text placeholder="BSc, MEng" required>
-                    </li>
-                    <li>
-                        <label for=course>Title of Course</label>
-                        <input id="course" name="course" type=text placeholder="Computer Science"  required>
-                            </li>
-                    <li>
-                        <label for=year>Year of Study</label>
-                        <select id = "year" name = "year">
-                            <option value = "1">1st Year</option>
-                            <option value = "2">2nd Year</option>
-                            <option value = "3">3rd Year</option>
-                            <option value = "4">4th Year</option>
-                            <option value = "5"> 5th Year</option>
-                        </select>
-                            </li>
-                </ol>
-            </fieldset>
+					University: <input type="text" placeholder="University of Strathclyde" required> <br>
+					Degree: <input type="text" placeholder="MEng" required> <br>
+					Course: <input type="text" placeholder="Computer Science" required> <br>
+					Year of Study:   
+					<select id= "year" name= "year" required>
+						<option value= "1st">1st Year</option>
+						<option value = "2nd">2nd Year</option>
+                   	    <option value = "3rd">3rd Year</option>
+                    	<option value = "4th">4th Year</option>
+                    	<option value= "5th">5th Year</option>
+					</select>
+			</fieldset>
+            
             <fieldset>
                 <label>Schemes Available</label>
                 <select id = "scheme" name= "scheme" required>
@@ -90,7 +70,7 @@
                 </select>
                 </fieldset>
             <fieldset>
-                <button type="submit">Submit your details</button>
+                 <input type="submit" formaction="page1.htm" value="Submit your details">
             </fieldset>
         </form>
     </body>

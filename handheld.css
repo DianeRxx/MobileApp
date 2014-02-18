@@ -10,17 +10,35 @@ h1, p {
     *text-align: center;
     }
     
+    a.Graduate {
+    display: none;
+    }
+    
+    #bodyContent li:before {
+	display: block;
+	position: relative;
+	max-width: 0px;
+	max-height: 0px;
+	color: #EE300C;
+	content:'\2022';
+	font-size: 26px;
+	left: -.5em;
+	top: 0;
+}
+    
  form#studentinfo fieldset {
     background: RGB(225,39,39);
 	border: none;
+	font-size: 16px;
+	font-weight: normal;
 }
 
 
 form#studentinfo legend {
     background: RGB(225,39,39);
 	color: #FFFFFF;
-	*font-size: 20px;
-	font-weight: normal;
+	font-size: 20px;
+	font-weight: bold;
 }
    
 form#studentinfo ol li {
@@ -38,8 +56,8 @@ form#studentinfo ol ol li {
 
 form#studentinfo label {
     color: RGB(255,255,255);
-	float: left;
-    font-weight: normal;
+	*float: left;
+    font-weight: bold;
 	*width: 200px;
 }
     
