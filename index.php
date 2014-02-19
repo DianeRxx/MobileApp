@@ -1,8 +1,8 @@
 <?php
-$host = "dianeramsay";
-$user = "davidfra_Dave";
+$host = "DEVWEB2013.cis.strath.ac.uk/~ylb10122";
+$user = "ylb10122";
 $db_name= "ylb10122";
-$pass= "PASSWORD";
+$pass= "hmeddlyn";
 
 $con = mysql_connect($host, $user, $pass);
 
@@ -24,15 +24,12 @@ $sql="INSERT INTO StudentDetails (name,email,phonenumber,university,degree,cours
 if (!mysql_query($sql,$con)) {
 die('Error: ' . mysql_error()); 
 } 
+
+
+
 echo "The form data was successfully added to your database."; 
 
 
- $body = "Hi,\n\nThank you for entering your details into our app.";
- if (mail($email, $scheme, $body)) {
-   echo("<p>Email successfully sent!</p>");
-  } else {
-   echo("<p>Email delivery failed…</p>");
-  }
 
 
 mysql_close($con);

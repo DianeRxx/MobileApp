@@ -5,14 +5,39 @@ form#studentinfo {
 	background: RGB(225,39,39);
 }
 
+.infoPage {
+	background: RGB(225, 39, 39);
+	}
+
+	
+
 h1, p {
     color: #FFFF33;
     *text-align: center;
     }
     
+    
+    
     a.Graduate {
     display: none;
     }
+    
+    input:required {
+    background:hsl(180, 50%, 90%);
+    border:1px solid #999;
+}
+
+input:valid,
+input:in-range {
+    background:hsl(120, 50%, 90%);
+    border-color:hsl(120, 50%, 50%);
+}
+
+input:invalid,
+input:out-of-range {
+    border-color:hsl(0, 50%, 50%);
+    background:hsl(0, 50%, 90%);
+}
     
     #bodyContent li:before {
 	display: block;
