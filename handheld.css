@@ -5,6 +5,10 @@ form#studentinfo {
 	background: RGB(225,39,39);
 }
 
+.quiz {
+	background: RGB(225, 39, 39);
+	}
+
 .infoPage {
 	background: RGB(225, 39, 39);
 	}
@@ -86,7 +90,13 @@ input:out-of-range {
 	width: 100px;
 }
 
+form#studentinfo {
+	text-align: center;
+	}
+
 form#studentinfo fieldset p{
+  	margin: 0 auto;
+  	text-align: left;
 	clear: both;
 	padding: 5px;
 	}
@@ -96,7 +106,7 @@ form#studentinfo legend {
 	color: #FFFFFF;
 	font-size: 20px;
 	font-weight: bold;
-	text-align: left;
+	text-align: center;
 }
    
 form#studentinfo ol li {
