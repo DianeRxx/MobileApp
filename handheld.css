@@ -22,8 +22,21 @@ form#studentinfo {
 	display: block;
 	/*margin: 8px 22px 8px 22px;*/
 	overflow: hidden;
-	width: 40%; 
+	text-align: center;
+	width: 100%; 
 }	
+
+.homepage body{
+	text-align: center;
+	}
+
+.homepage ul, li {
+	list-style-type:none;
+	}
+
+.homepage #titleText {
+	text-align:center;
+	}
 
 h1, p {
     color: #FFFF33;
