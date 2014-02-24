@@ -34,9 +34,10 @@
     <body>
         <form id=studentinfo class="app" action="databaseDisplay.php" method= "post"  >
             <h1> JP Morgan Student Recuitment Application </h1>
-            <p> Welcome to our student details application where you can enter your details and we will keep you informed
-                of our recruitment process and job positions available. </p>
+            <p> Please enter the required information below. We will keep you informed of upcoming events. </p>
+            <p>
             <button type="reset" value="Reset">Reset</button>
+            </p>
             <fieldset>
                 <legend>Contact Details</legend>
 					Name: <input type="text" name= "name" placeholder="James Morgan" required pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+"><br>
@@ -72,5 +73,10 @@
                  <input type="submit" value="Submit your details">
             </fieldset>
         </form>
+        <footer>
+				<p>
+					<a href= "index.html">Back To Homepage</a>
+				</p>
+			</footer>
     </body>
 </html>

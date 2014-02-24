@@ -9,7 +9,21 @@ form#studentinfo {
 	background: RGB(225, 39, 39);
 	}
 
-	
+.homepage {
+	background: RGB(225,39,39);
+	}
+
+.homepage nav {
+	background-color: #fff;
+	border: 1px solid #dedede;
+	border-radius: 4px;
+	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+	color: #888;
+	display: block;
+	margin: 8px 22px 8px 22px;
+	overflow: hidden;
+	width: 90%; 
+}	
 
 h1, p {
     color: #FFFF33;
@@ -69,6 +83,7 @@ form#studentinfo legend {
 	color: #FFFFFF;
 	font-size: 20px;
 	font-weight: bold;
+	text-align: left;
 }
    
 form#studentinfo ol li {
